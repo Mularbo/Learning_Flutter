@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class Mytheme {
   static ThemeData lightTheme(BuildContext context) => ThemeData(
         primarySwatch: Colors.blue,
-        appBarTheme: AppBarTheme(
+        appBarTheme: const AppBarTheme(
           color: Colors.white,
           elevation: 0,
           iconTheme: IconThemeData(
@@ -11,7 +11,8 @@ class Mytheme {
           ),
           titleTextStyle: TextStyle(
             color: Colors.black,
-            fontSize: 20,
+            fontSize: 25,
+            fontWeight: FontWeight.bold,
           ),
         ),
       );

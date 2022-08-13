@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
+
 import 'package:fluttp/utilities/routes.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -77,7 +76,7 @@ class _LoginPageState extends State<LoginPage> {
                         setState(() {});
                       },
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 15,
                     ),
                     TextFormField(
