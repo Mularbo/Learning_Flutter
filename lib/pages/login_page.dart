@@ -103,7 +103,7 @@ class _LoginPageState extends State<LoginPage> {
                 height: 20,
               ),
               Material(
-                color: Colors.blue,
+                color: changebutton ? Colors.blueGrey : Colors.blue,
                 borderRadius: BorderRadius.circular(changebutton ? 50 : 5),
                 child: InkWell(
                   //splashColor: Colors.grey,
@@ -111,11 +111,14 @@ class _LoginPageState extends State<LoginPage> {
 
                   child: AnimatedContainer(
                     duration: Duration(seconds: 1),
-                    width: changebutton ? 50 : 150,
+                    width: changebutton ? 35 : 110,
                     height: 40,
                     alignment: Alignment.center,
                     child: changebutton
-                        ? const Icon(Icons.done)
+                        ? const Icon(
+                            Icons.done,
+                            color: Colors.white,
+                          )
                         : const Text(
                             "Login",
                             style: TextStyle(
