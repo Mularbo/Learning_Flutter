@@ -20,4 +20,8 @@ class Mytheme {
   static ThemeData get darkTheme => ThemeData(
         brightness: Brightness.dark,
       );
+
+  //color
+  static Color creamColor = Color(0xfff5f5f5);
+  static Color darkBluish = Color.fromARGB(255, 61, 56, 94);
 }
