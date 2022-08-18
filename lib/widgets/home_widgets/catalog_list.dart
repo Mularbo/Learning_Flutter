@@ -69,7 +69,7 @@ class CatalogItem extends StatelessWidget {
                         StadiumBorder(),
                       ),
                     ),
-                    child: "BUY".text.bold.lg.make(),
+                    child: "Add to Cart".text.bold.lg.make(),
                   )
                 ],
               ).pOnly(right: 8),

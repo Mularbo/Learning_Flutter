@@ -1,4 +1,5 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttp/widgets/theme.dart';
 import 'package:velocity_x/velocity_x.dart';
@@ -14,7 +15,9 @@ class HomeDetailPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Mytheme.creamColor,
-      appBar: AppBar(),
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+      ),
       bottomNavigationBar: Container(
         color: Colors.white,
         child: ButtonBar(
@@ -29,8 +32,8 @@ class HomeDetailPage extends StatelessWidget {
                   StadiumBorder(),
                 ),
               ),
-              child: "BUY".text.bold.xl2.make(),
-            ).wh(100, 50),
+              child: "Add To Cart".text.bold.xl.make(),
+            ).wh(130, 50),
           ],
         ).pOnly(right: 10, left: 10),
       ),
@@ -48,7 +51,7 @@ class HomeDetailPage extends StatelessWidget {
             ).h40(context),
             Expanded(
               child: VxArc(
-                height: 20,
+                height: 25,
                 arcType: VxArcType.CONVEY,
                 edge: VxEdge.TOP,
                 child: Container(
@@ -66,11 +69,18 @@ class HomeDetailPage extends StatelessWidget {
                           .xl
                           .make(),
                       10.heightBox,
+                      "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+                          .text
+                          .semiBold
+                          .textStyle(context.captionStyle)
+                          .align(TextAlign.center)
+                          .make()
+                          .p16(),
                     ],
                   ).py64(),
-                ),
+                ).scrollVertical(),
               ),
-            )
+            ),
           ],
         ),
       ),

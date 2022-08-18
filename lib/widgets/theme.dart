@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class Mytheme {
   static ThemeData lightTheme(BuildContext context) => ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.deepPurple,
         appBarTheme: const AppBarTheme(
           color: Colors.white,
           elevation: 0,
