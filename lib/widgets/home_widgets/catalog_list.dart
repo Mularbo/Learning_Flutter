@@ -77,6 +77,6 @@ class CatalogItem extends StatelessWidget {
           ))
         ],
       ),
-    ).square(135).rounded.white.shadow.make().p8().py8();
+    ).square(135).rounded.color(context.cardColor).shadow.make().p8().py8();
   }
 }
