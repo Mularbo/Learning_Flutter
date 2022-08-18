@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:velocity_x/velocity_x.dart';
 import 'package:fluttp/widgets/theme.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Mytheme {
   static ThemeData lightTheme(BuildContext context) => ThemeData(
         cardColor: Colors.white,
         canvasColor: creamColor,
+        primaryTextTheme: GoogleFonts.latoTextTheme(),
         primarySwatch: Colors.deepPurple,
         appBarTheme: const AppBarTheme(
           color: Colors.white,

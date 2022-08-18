@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-
+import 'package:velocity_x/velocity_x.dart';
 import 'package:fluttp/utilities/routes.dart';
+import 'package:fluttp/widgets/theme.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -44,9 +45,9 @@ class _LoginPageState extends State<LoginPage> {
               ),
               Text(
                 "Welcome! $name",
-                style: const TextStyle(
-                  color: Colors.blue,
+                style: TextStyle(
                   fontWeight: FontWeight.bold,
+                  color: Mytheme.darkBluish,
                   fontSize: 30,
                 ),
               ),
@@ -102,7 +103,7 @@ class _LoginPageState extends State<LoginPage> {
                 height: 20,
               ),
               Material(
-                color: changebutton ? Colors.blueGrey : Colors.blue,
+                color: changebutton ? Colors.blueGrey : Colors.deepPurple,
                 borderRadius: BorderRadius.circular(changebutton ? 50 : 5),
                 child: InkWell(
                   //splashColor: Colors.grey,

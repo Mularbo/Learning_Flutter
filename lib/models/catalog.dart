@@ -5,6 +5,13 @@ import 'package:flutter/foundation.dart';
 
 class CatalogModel {
   static List<dynamic>? items;
+  //get item by id
+
+  static Item getById(int id) =>
+      items!.firstWhere((element) => element.id == id, orElse: null);
+
+  //get position
+  static Item getByPosition(int pos) => items![pos];
 }
 
 class Item {
