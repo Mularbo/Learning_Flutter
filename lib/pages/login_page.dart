@@ -110,8 +110,8 @@ class _LoginPageState extends State<LoginPage> {
                   onTap: () => moveToHome(context),
 
                   child: AnimatedContainer(
-                    duration: Duration(seconds: 1),
-                    width: changebutton ? 35 : 110,
+                    duration: Duration(milliseconds: 500),
+                    width: changebutton ? 43 : 110,
                     height: 40,
                     alignment: Alignment.center,
                     child: changebutton
